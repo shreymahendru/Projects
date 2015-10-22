@@ -1,0 +1,9 @@
+My project is the bomb diffusal simulator. My milestones were:
+
+1) Making the clock run down from 9 to 0.  
+
+2)Making the random generator for the behaviour of the switches. 1st button = dead, 2nd button= would stop the clock (defuse) and 3rd button would make the clock run down faster.
+
+3) add beeps when the timer runs down. And make a constant noise when you run out of time.
+
+Video Demostration :- https://www.youtube.com/watch?v=ZkEqKUTHl5A
