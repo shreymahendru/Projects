@@ -1,0 +1,722 @@
+<!doctype html>
+<html>
+ <head>
+ <title>CSC309</title>
+
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+ 
+ <body>
+    <div class = "container">
+
+        
+        <div id = "topBar">
+           <div class = "fixedWidth"> 
+                <div id="csc309">
+                    <p>CSC309</p>
+                </div>
+                <div id ="Winter">
+                    <p>Winter 2016</p>
+                </div>
+                <div id = "topMenu">
+                    <ul>
+                        <a href="#nameBar"><li>Home</li></a>
+                        <a href="#Assignment"><li>Assignments</li></a>
+                        <a href="https://piazza.com/class/ij76iue0b6i6wl"><li>Discussion forum</li></a>
+                        <a href="https://markus.cdf.toronto.edu/csc309-2016-01/?locale=en"><li>Markus</li></a>
+                        <a href="#info"><li>Anonymous Feedback</li></a>
+                        <a href="#schdule"><li>Schedule</li></a>
+                    </ul>
+                </div>
+           </div> 
+        </div>
+
+
+        <div class = "break">
+        </div>
+     <!--    <div class ="fixedWidth" >  -->
+            <div id ="nameBar">
+              
+               <p>Programming on the Web</p>
+                
+            </div>   
+            <div class = "break"></div> 
+
+      <!-- </div>  -->
+        <div id= "section">
+            
+             <h1><u>General Information</u></h1>
+
+            
+            <span class="What">Instructor:</span>  
+            <span class="Who">Mashiyat, Ahmed Shah</span>  <div class = "break"></div>
+            <span class="What">Email:</span>
+            <span class="Who"><a href="mailto:mashiyat@cs.toronto.edu?Subject=CSC309" target="_top">mashiyat@cs.toronto.edu</a></span>  <div class = "break"></div>
+            <span class="What">Office Hours: </span>  
+            <span class="Who"> Fridays, 4.30pm-6pm, Office: BA 3289 (or by appointment)</span>  <div class = "break"></div>
+            <span class="What">Course Website:</span>  
+            <span class="Who"><a href = " http://www.cs.toronto.edu/~mashiyat/csc309/index.htm">http://www.cs.toronto.edu/~mashiyat/csc309/index.htm</a></span>  <div class = "break"></div>
+            <span class="What">Discussion forum:</span>  
+            <span class="Who"><a href="https://piazza.com/class/ij76iue0b6i6wl">https://piazza.com/class/ij76iue0b6i6wl</a></span>  <div class = "break"></div>
+            <span class="What">Markus:</span>  
+            <span class="Who"><a href="https://markus.cdf.toronto.edu/csc309-2016-01/?locale=en ">https://markus.cdf.toronto.edu/csc309-2016-01/?locale=en</a>(setup pending)</span>  <div class = "break"></div>
+        
+            <hr>
+            <h3>Overview</h3>
+
+            <p> 
+                This course provides an introduction to the technologies used for developing Web applications. We discuss technologies for static and dynamic content generation, including N-tier, MVC architectures, and mobile supported web development. We also cover general web design principles, security, and web performance.
+            </p>
+            <hr>
+
+            <h3>Recommended Readings</h3>
+            <p>Web Programming Step by Step, by Marty Steep, Jessica Miller and Victoria Kirst
+Standard documents from: <a href ="http://www.w3.org">http://www.w3.org</a>, and <a href = "http://nodejs.org/api/">http://nodejs.org/api/</a></p>
+            
+            <hr>
+            <h3>Prerequisites</h3>
+            <p>Prerequisite of CSC343 is waived. Students who don’t have CSC209 need to show experience in developing programs of significant size</p>
+            <hr>
+            <div id = "Assignment">
+            <h3>Marking</h3>
+            <p>Course grade will be determined by Four assignments and a final exam as follows:</p>
+            <!-- http://colintoh.com/blog/display-table-anti-hero -->
+            
+            <div class="div-table">
+             <div class="div-table-row">
+                <div class="div-table-col" ><b>Topic(tentative)</b></div>
+                <div class="div-table-col" ><b>Team Size</b></div>
+                <div class="div-table-col" ><b>Weight %</b></div>
+                <div  class="div-table-col"><b>Out</b></div>
+                <div  class="div-table-col"><b>Due</b></div>
+             </div>
+           
+            <div class="div-table-row">
+                  <div class="div-table-col">A1(HTML &amp; CSS)</div>
+                  <div class="div-table-col">Individual</div>
+                <div class="div-table-col">10</div>
+                <div class="div-table-col">January 28</div>
+                <div class="div-table-col">February 14</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">A2 (JavaScript &amp; Canvas)</div>
+                <div class="div-table-col">Group Of 2</div>
+                <div class="div-table-col">15</div>
+                <div class="div-table-col">January 13</div>
+                <div class="div-table-col">January 27</div>
+           </div>
+                <div class="div-table-row">
+                <div class="div-table-col">A3 (Web Service)</div>
+                <div class="div-table-col">Individual</div>
+                <div class="div-table-col">15</div>
+                <div class="div-table-col">February 15</div>
+                <div class="div-table-col">February 28</div>
+           </div>
+                <div class="div-table-row">
+                <div class="div-table-col">A4 (Large App) P1</div>
+                <div class="div-table-col">Group of 4</div>
+                <div class="div-table-col">5</div>
+                <div class="div-table-col">February 29</div>
+                <div class="div-table-col">March 9</div>
+           </div>
+                <div class="div-table-row">
+                <div class="div-table-col">A4 (Large App) P2</div>
+                <div class="div-table-col">Group of 4</div>
+                <div class="div-table-col">20</div>
+                <div class="div-table-col">     &nbsp; </div>
+                <div class="div-table-col">April 3</div>
+           </div>
+                 <div class="div-table-row">
+                <div class="div-table-col">Final Exam</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">35 (Pass mark: above 40%)</div>
+                <div class="div-table-col">     &nbsp; </div>
+                <div class="div-table-col">TBA</div>
+            </div>
+            </div>
+
+      </div>
+      <br>
+      <hr>
+      <br>
+
+
+            <h3>Assignment/Project Policies</h3>
+            <p><ul>
+                <li>Assignments will be posted on the course web page. Deadlines are fixed. No extension will be allowed.</li>
+                <li>All deliverables should be submitted electronically (through markus).</li>
+                <li>Assignments are due at <u>11.59 pm</u> on their due date. <strong>Submit early to avoid last minute submission related problems.</strong> Email submission will not be be accepted unless markus is down. Email submission at the eleventh hour will be considered as late submission.</li>
+
+            </ul></p>
+            <p><ol>
+                <li><strong>Late coursework.</strong> You can turn in your assignment up to <strong>2 days late</strong>, but this will cost you 10% of the maximum grade for every day you are late (i.e., an assignment turned 2 days late  can get a maximum of 12/15). No assignment will be accepted after 2 days, and will be given a grade of 0. If you are struggling with an assignment, talk to the instructor or the TA’s for help well before the deadline.</li>
+                <li><strong>Re-marking.</strong>You have up to 5 days from the time the marked assignment is available for hand-back to ask for a re-mark. <strong>No assignment will be re-marked after this period.</strong> Details will be posted on the course’s newsgroup. If you are still dissatisfied after talking to the TA, then email the instructor to set an appointment.</li>
+                <li><strong>Communications.</strong> Your best bet for getting questions answered quickly is to post to the course discussion group. If you think your question is not appropriate for the newsgroup, feel free to email the instructor. <u>Please make sure to include “CSC309” in the subject line of your email. </u>Finally, before you email the instructor, please check the newsgroup; your question may have already been answered.</li>
+                <li><strong>Cheating/Plagiarism.</strong> The policy of your faculty or school will be in effect. You are encouraged to discuss problems with your classmates; however, all work that you submit must be your own. When you submit an assignment with your name on it, you are certifying that you have done the work on that assignment yourself. Remember that the penalty for cheating is always worse than handing in the assignment late.</li>
+
+            </ol></p>
+            <br>
+            <hr>
+            <br>
+
+            <h3>Anonymous Feedback</h3>
+          <p> <form >
+            <div id = "info">
+                  Your name (Optional):<br>
+                  <input type="text" name="username">
+            
+              <br>
+              <br>
+              Your email (Optional):<br>
+              <input type="text" name="useremail">
+              <br>
+              <br>
+              </div>
+
+              <div id ="text">
+              Your message:<br>
+              <textarea name="usermessage" cols="60" rows="10" > Type your message here... </textarea>
+              
+              <br>
+              <br>
+              </div>
+              <div id = "submit">
+              <button type="submit">Submit</button>
+              </div>
+            </form>
+            </p>
+    
+    <br>
+    <br>
+
+
+
+
+            <div id = "schdule">
+            <h3>Class Schedule (Section L0101/L2001)</h3>
+            <!-- http://colintoh.com/blog/display-table-anti-hero -->
+
+     <div class="div-table">
+             <div class="div-table-row">
+                <div class="div-table-col1" ><b>Week</b></div>
+                <div class="div-table-col1" ><b>&nbsp;</b></div>
+                <div class="div-table-col1" ><b><u>L0101/L2001</u></b></div>
+                <div  class="div-table-col1"><b>Topic</b></div>
+             </div>
+           
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">1</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col"> January 11,13</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.1-introduction.pdf">Introduction</a>, HTTP <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.2-the-internet-and-the-www.pdf">1</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.1-simple-web-request.pdf">2</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.2-html-basics.pdf">HTML</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.3-css.pdf">Page Layout</a>, and <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.4-css-page-layout.pdf">CSS</a>,<a href="http://www.w3schools.com/">w3schools</a></div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">January 15</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Tutorial/1.%20Git.pdf">Git-Social Coding</a></div>
+               
+           </div>
+                
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">2</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col"> January 18,20</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.1%20HTML5%20and%20CSS3.pdf">HTML5, CSS3</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.2-the-internet-and-the-www.pdf">1</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/Responsive%20Design%20and%20UX.pdf">Media Queries</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/DOM.pdf">DOM</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.3-css.pdf">Page Layout</a>, Demo</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">January 22</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/LESS.pdf">Less/Sass</a></div>
+               
+           </div>
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">3</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">January 25, 27</div>
+                <div class="div-table-col">Javascript, HTML Canvas</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>January 27</strong></div>
+                <div class="div-table-col1"><strong>Assignment 1 Due, 11.59 PM</strong></div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">January 29</div>
+                <div class="div-table-col">Semantic UI/ Twitter Bootstrap</div>
+             </div>
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">4</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 1, 3</div>
+                <div class="div-table-col">AJAX, JSON,  Web Architectures, REST API</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">February 5</div>
+                <div class="div-table-col">JQuery</div>
+             </div>
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">5</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 8, 9</div>
+                <div class="div-table-col">HTML Forms, Server-Side Programming, NodeJS</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">February 12</div>
+                <div class="div-table-col">Nodejs-MongoDB Setup</div>
+             </div>
+            <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>February 14</strong></div>
+                <div class="div-table-col1"><strong>Assignment 2 Due, 11.59 PM</strong></div>
+            </div>             
+            <div class="div-table-row">
+            <div class="div-table-col">6</div>
+            <div class="div-table-col">Class</div>
+            <div class="div-table-col">February 15, 17</div>
+            <div class="div-table-col">No Class, Family Day</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">February 19</div>
+                <div class="div-table-col">No Tutorial, Reading Week</div>
+             </div>
+
+
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">7</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 22, 24</div>
+                <div class="div-table-col">ExpressJS, AngularJS</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">February 26</div>
+                <div class="div-table-col">AngularJS</div>
+             </div>
+
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>February 28</strong></div>
+                <div class="div-table-col1"><strong>Assignment 3 Due, 11.59 PM</strong></div>
+            </div>  
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">8</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">Feb. 29, March 2</div>
+                <div class="div-table-col">MongoDB Schema Design, Databases</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">March 4</div>
+                <div class="div-table-col">Testing with Mocha</div>
+            </div>                        
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">9</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 7, 9</div>
+                <div class="div-table-col">Sessions and Cookies, Performance</div>
+            </div>
+
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>March 9</strong></div>
+                <div class="div-table-col1"><strong>Assignment 4(Part 1) Due, 11.59 PM</strong>
+                </div>
+                </div>
+
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">March 11</div>
+                <div class="div-table-col">Performance</div>
+            </div>   
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">10</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 14, 16</div>
+                <div class="div-table-col">Web Security</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">March 18</div>
+                <div class="div-table-col">Web Security</div>
+            </div>           
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">11</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 21, 23</div>
+                <div class="div-table-col">Cloud Computing, From Project to Product</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">March 25</div>
+                <div class="div-table-col">Good Friday</div>
+            </div> 
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">12</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 28, 30</div>
+                <div class="div-table-col">Web Search Engine, Advanced Topics</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">April 1</div>
+                <div class="div-table-col"> Assignment 4 Problem Solving</div>
+            </div> 
+
+            <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>April 3</strong></div>
+                <div class="div-table-col1"><strong>Assignment 4(Part 2) Due, 11.59 PM</strong>
+                </div>
+                </div>
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">13</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">April 4,6</div>
+                <div class="div-table-col">Review, informal Discussion, what’s Next?</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">April 8</div>
+                <div class="div-table-col"> No Tutorial</div>
+            </div>  
+
+                <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>TBA</strong></div>
+                <div class="div-table-col1"><strong>Final Exam</strong>
+                </div>
+                </div>   
+            </div>
+            <br>
+            <br>
+            <br>
+         <!--    http://colintoh.com/blog/display-table-anti-hero -->
+
+<h3>Class Schedule (Section L2501/L5101)</h3>
+
+
+     <div class="div-table">
+             <div class="div-table-row">
+                <div class="div-table-col1" ><b>Week</b></div>
+                <div class="div-table-col1" ><b>&nbsp;</b></div>
+                <div class="div-table-col1" ><b><u>L2501/L5101</u></b></div>
+                <div  class="div-table-col1"><b>Topic</b></div>
+             </div>
+           
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">1</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col"> January 11</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.1-introduction.pdf">Introduction</a>, HTTP <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.2-the-internet-and-the-www.pdf">1</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.1-simple-web-request.pdf">2</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.2-html-basics.pdf">HTML</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.3-css.pdf">Page Layout</a>, and <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.4-css-page-layout.pdf">CSS</a>,<a href="http://www.w3schools.com/">w3schools</a></div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Tutorial/1.%20Git.pdf">Git-Social Coding</a></div>
+               
+           </div>
+                
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">2</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col"> January 18</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.1%20HTML5%20and%20CSS3.pdf">HTML5, CSS3</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/1.2-the-internet-and-the-www.pdf">1</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/Responsive%20Design%20and%20UX.pdf">Media Queries</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/DOM.pdf">DOM</a>, <a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/2.3-css.pdf">Page Layout</a>, Demo</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col"><a href="http://www.cs.toronto.edu/~mashiyat/csc309/Lectures/LESS.pdf">Less/Sass</a></div>
+               
+           </div>
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">3</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">January 25</div>
+                <div class="div-table-col">Javascript, HTML Canvas</div>
+            </div>
+                        <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Semantic UI/ Twitter Bootstrap</div>
+             </div>
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>January 27</strong></div>
+                <div class="div-table-col1"><strong>Assignment 1 Due, 11.59 PM</strong></div>
+            </div>
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">4</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 1</div>
+                <div class="div-table-col">AJAX, JSON,  Web Architectures, REST API</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">JQuery</div>
+             </div>
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">5</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 8</div>
+                <div class="div-table-col">HTML Forms, Server-Side Programming, NodeJS</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Nodejs-MongoDB Setup</div>
+             </div>
+            <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>February 14</strong></div>
+                <div class="div-table-col1"><strong>Assignment 2 Due, 11.59 PM</strong></div>
+            </div>             
+            <div class="div-table-row">
+            <div class="div-table-col">6</div>
+            <div class="div-table-col">Class</div>
+            <div class="div-table-col">February 15</div>
+            <div class="div-table-col">No Class, Family Day</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">No Tutorial, Reading Week</div>
+             </div>
+
+
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">7</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 22</div>
+                <div class="div-table-col">ExpressJS, AngularJS</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">AngularJS</div>
+             </div>
+
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>February 28</strong></div>
+                <div class="div-table-col1"><strong>Assignment 3 Due, 11.59 PM</strong></div>
+            </div>  
+
+             <div class="div-table-row">
+                  
+                <div class="div-table-col">8</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">February 29</div>
+                <div class="div-table-col">MongoDB Schema Design, Databases</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Testing with Mocha</div>
+            </div>                        
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">9</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 7</div>
+                <div class="div-table-col">Sessions and Cookies, Performance</div>
+            </div>
+                      <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Performance</div>
+            </div> 
+
+            <div class="div-table-row">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>March 9</strong></div>
+                <div class="div-table-col1"><strong>Assignment 4(Part 1) Due, 11.59 PM</strong>
+                </div>
+                </div>
+  
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">10</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 14</div>
+                <div class="div-table-col">Web Security</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Web Security</div>
+            </div>           
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">11</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 21</div>
+                <div class="div-table-col">Cloud Computing, From Project to Product</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Good Friday</div>
+            </div> 
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">12</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">March 28</div>
+                <div class="div-table-col">Web Search Engine, Advanced Topics</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col"> Assignment 4 Problem Solving</div>
+            </div> 
+
+            <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>April 3</strong></div>
+                <div class="div-table-col1"><strong>Assignment 4(Part 2) Due, 11.59 PM</strong>
+                </div>
+                </div>
+
+
+            <div class="div-table-row">
+                  
+                <div class="div-table-col">13</div>
+                <div class="div-table-col">Class</div>
+                <div class="div-table-col">April 4</div>
+                <div class="div-table-col">Review, informal Discussion, what’s Next?</div>
+            </div>
+            <div class="div-table-row">
+                
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col">Tutorial</div>
+                <div class="div-table-col">&nbsp;</div>
+                <div class="div-table-col"> No Tutorial</div>
+            </div>  
+
+                <div class="div-table-row1">
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1">&nbsp;</div>
+                <div class="div-table-col1"><strong>TBA</strong></div>
+                <div class="div-table-col1"><strong>Final Exam</strong>
+                </div>
+                </div>   
+            </div>
+
+            </div>
+            <br>
+            </div>
+
+
+            <footer>
+                <a href="http://web.cs.toronto.edu/"><img src="images/uoft.jpg"></a>
+                <!-- https://webmail.cs.toronto.edu/compsci600.jpg -->
+                <address>Created By Shrey Mahendru</address>
+            </footer>
+                
+        </div>
+                
+            
+</body>
+</html>

@@ -1,0 +1,316 @@
+
+
+    #topBar
+    {
+        background-color: #001833;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 0;
+        position: fixed;
+        opacity: .87;
+        z-index: 10000;
+
+    }
+
+    .fixedWidth
+    {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    body{
+        /*background: -webkit-linear-gradient(-90deg, #002B5D, white);*/
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        font-family: arial, helvetica;
+
+    }
+    #csc309
+    {
+        width: 12%;
+        float: left;
+        color: white;
+        border-right: 1.5px solid #002B5D;
+    }
+    #csc309 p{
+        margin: 0;
+    
+        font-size: 2em;
+        padding-top: 7px;
+        padding-right: 20px;
+        padding-bottom: 8px;
+    }
+    #Winter
+    {
+        width:16%;
+        color: white;
+        float: right;
+    }
+    #Winter p{
+        margin: 0;
+        font-size: 2em;
+        padding-top: 7px;
+    }
+    #topMenu
+    {
+        float: left;
+    }
+     #topMenu ul
+    {
+        list-style: none;
+        margin: 0;
+        /*margin-top:20px;*/
+        padding: 0;
+
+    }
+    #topMenu li
+    {
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 1.5px solid #002B5D;
+        height: auto ;
+        float: left;
+
+
+    }
+    #topMenu li:hover 
+    {
+        color: #001833 !important;
+        background-color: white;
+
+
+    }
+    .break
+    {
+        clear: both;
+    }
+    #nameBar
+    {
+        display: block;
+
+        background-color: #002B5D;
+/**/
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        background-image: url("images/logo.png");
+        /*http://universityrelations.utoronto.ca/sc/files/2012/03/LogoReversedBlue.jpg*/
+        background-repeat: no-repeat;
+        background-size: 5%;
+        margin: 0 auto;
+        font-size: 5em;
+        float: left;
+        color: #FFFFFF;
+  /*      padding-left: 174px;
+        padding-right: 174px;*/
+    
+        background-position: left bottom;
+    }
+    #nameBar p
+    {
+        margin: 0;
+         padding-top: 52px;
+        padding-left: 18%;
+        padding-right: 12%;
+    }
+
+
+    #section
+    {
+        
+        color: #262626 ;
+        margin: auto;
+        width: 80%;
+        border-left: 3px solid #001833;
+        border-right: 3px solid #001833;
+        border-bottom: 3px solid #001833;
+        padding: 10px;
+
+}
+        
+
+    
+    #section h1
+    {
+        text-decoration: underline ;
+    }
+    .What{
+    font-weight: bold;
+    /*border: 1px solid black;
+*/    display: block; 
+    position: relative;
+    left: 26%;
+    height: 20px;
+    width: 200px;
+    float: left;
+    text-align: left;
+   /* padding-right: 500px;*/
+
+}
+    span.Who{
+    display: block; 
+    position: relative;
+    left: 26%;
+    height: 20px;
+    width: 600px;
+    float: left;
+    text-align: left;
+
+}
+#section h3
+{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#section p
+{
+
+    margin-top: 0px;
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 26%;
+    padding-left: 0;
+}
+hr
+{
+    width: 80%;
+    border:1.5px solid #001833;;
+}
+
+.div-table{
+   margin: auto;
+  display:table;         
+  width:auto;         
+       
+  border-top:2px solid  #666666; 
+  border-bottom:2px solid  #666666;         
+  border-spacing:5px;
+}
+.div-table-row{
+  display:table-row;
+  width:auto;
+  clear:both;
+  text-align: center;
+}
+
+.div-table-col{
+  float:left;
+    display:table-column;         
+  width:200px;         
+  background-color:#f2f2f2; 
+}
+.div-table-col1{
+  float:left;
+  display:table-column;         
+  width:200px;         
+  background-color:#c6d9ec; 
+}
+#section ul
+{
+    
+    margin-top: 0px;
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 26%;
+    padding-left: 0;
+}
+#section li
+{
+    padding-bottom: 5px;
+}
+#section ol
+{
+    margin-top: 0px;
+    display: block;
+    width: 70%;
+    position: relative;
+    left: 16%;
+    padding-left: 0;
+}
+footer
+{
+    display: block;
+    text-align: right;
+    display: block;
+    height: 50px;
+    margin: 0 auto ;
+    width: 100%;
+    color: white;
+    background-color: #01295C;
+    opacity: .87;
+/*    background: url("uoft.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;*/
+}
+footer address
+{
+    position: relative;
+    top: 35%;
+}
+footer img
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 15%;
+    height: 100%;
+    
+}
+   a:hover 
+    {
+        color: #01295C;
+        background-color: #c6d9ec;
+
+
+    }
+    #topMenu a
+    {
+        text-decoration: none;
+        
+
+    }
+    #info
+    {
+            margin-top: 0px;
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 40%;
+    padding-left: 0;
+    }
+    #text
+    {
+        margin: 0 auto ;
+    padding: 0;
+            margin-top: 0px;
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 5%;
+    padding-left: 0;
+
+    }
+    #submit
+    {
+         margin: 0 auto ;
+    padding: 0;
+            margin-top: 0px;
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    padding-left: 0;
+    }
+
+
