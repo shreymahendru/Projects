@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+    <title>Reaction Tester</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <style>
+        body
+        {
+            background-color: beige;
+            height: 100%;
+            width: 100%;
+        }
+        #content
+        {
+            display: block;
+            margin: 0 auto;
+            border: solid 2px black;
+            height: 600px;
+            width:600px;
+            background-color: aliceblue;
+        }
+        #box
+        {
+            display:none;
+            height: 50px;
+            width: 50px;
+            border: solid 1px black;
+            background-color: aqua;
+            position: relative;
+        }
+        p
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 auto;
+            position: relative;
+
+        }
+        #reactionTime
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+        .out
+        {
+            margin: auto 0;
+            text-align: center;
+        }
+        .out1
+        {
+            background-color: #499a94;
+            width: 100%;
+            height: 40px;
+            margin: 0 auto;
+            position: absolute;
+            top:0;
+            opacity: .77;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+
+        #footer {
+            display: block;
+            position:absolute;
+            text-align: right;
+            margin: 0 auto ;
+            opacity: .77;
+            bottom:0;
+            width:100%;
+            height:40px;
+            background-color: #499a94;
+            color: #313131;
+        }
+
+        #footer address
+        {
+            position: relative;
+            top: 35%;
+        }
+    </style>
+</head>
+
+<body>
+<p class="out1">REACTION GAME</p>
+<br>
+<br>
+<br>
+
+<div id="content">
+    <p id="reactionTime">You took:<span id="time"></span></p>
+    <div id="box"></div>
+</div>
+<p class="out">Your avg is: <span id ="avg"></span></p>
+
+
+<script type="text/javascript">
+     var createTime;
+     var clickedTime;
+     var arr= [];
+    anotherOne();
+    document.getElementById("box").onclick=function()
+    {
+        clickedTime = Date.now();
+        //alert("You too "+ ((clickedTime-createTime)/1000)+ " secs");
+        this.style.display ="none";
+        arr.push((clickedTime-createTime)/1000);
+        document.getElementById("time").innerHTML= (clickedTime-createTime)/1000+" seconds";
+        document.getElementById("avg").innerHTML=Math.round(avg(arr)*10000)/10000+" seconds";
+        anotherOne();
+    };
+
+    function anotherOne() {
+        var num = Math.floor(Math.random()*5000);
+        setTimeout(function () {
+            var left =(Math.round( Math.random()*500));
+            var top=(Math.round( Math.random()*500));
+            document.getElementById("box").style.top=top+"px";
+            document.getElementById("box").style.left=left+"px";
+            if(Math.random()>0.5)
+            {
+                document.getElementById("box").style.borderRadius= "100px";
+            }
+            else
+            {
+                document.getElementById("box").style.borderRadius= "0";
+            }
+            document.getElementById("box").style.display = "block";
+            document.getElementById("box").style.backgroundColor=random_color();
+            createTime = Date.now();
+        }, num);
+    }
+    function random_color(){
+        var str ="0987654321ABCDEF".split('');
+        var color ="#";
+        for (var i = 0; i<6; i++)
+        {
+            color += str[Math.round(Math.random())]
+        }
+        if (color == "#F0F8FF")
+        {
+            random_color();
+        }
+        return color;
+    }
+    function avg(array)
+    {
+        var avg =0;
+        for(var i= 0; i< array.length; i++ )
+        {
+            avg += array[i];
+        }
+        return (avg/array.length);
+    }
+
+</script>
+
+    <div id="footer">
+        <address>Created By Shrey Mahendru</address>
+    </div>
+</body>
+</html>
