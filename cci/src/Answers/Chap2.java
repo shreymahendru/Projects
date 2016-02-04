@@ -2,15 +2,33 @@ package Answers;
 
 import java.io.IOException;
 import java.util.Hashtable;
+import java.util.Map;
 
 
 public class Chap2 {
+
+
+    public int maxdiff(int [] arr)
+    {
+        int min = arr[0];
+        int maxdiff =arr[1]-arr[0];
+        for (int i = 1; i< arr.length; i++)
+        {
+          int current = arr[i];
+          int potentialMax =current - min;
+          maxdiff = Math.max(potentialMax,maxdiff);
+          min = Math.min(current, min);
+        }
+        return maxdiff;
+    }
 
 
     public static void main(String args[]) throws IOException
     {
         Chap2 a = new Chap2();
         Node head = new Node(1);
+        int arr[] ={10, 7, 5, 8, 11, 9};
+        System.out.println(a.maxdiff(arr));
 
     }
 
