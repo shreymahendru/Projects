@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="css.css">
+                <script src="javascript.js"></script>
+                
+                <title>TTB</title>
+                </head>
+    <body>
+        <p id="title">Tap Tap Bug Game</p>
+        <img id = "food"src="food.png">
+            
+            <br>
+            <br>
+            
+            <div id="startMenu" width="400" height="600">
+                <div class="row" id="spacer">
+                </div>
+                <div class="row">
+                    <div class="radioButton">
+                        <p id="level" >Level:</p>
+                    </div>
+                    <div class="radioButton">
+                        <input  type="radio" name="radio" id="radio1" class="radio" checked/>
+                        <label for="radio1">1</label>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="radio" id="radio2" class="radio"/>
+                        <label for="radio2">2</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <p id="highScore" style="color: black;" >High Score:<br> 0</p>
+                </div>
+                <div class="row">
+                    <div id="startButton"><p>Start</p></div>
+                </div>
+            </div>
+            
+            <div id="game">
+                <canvas id ="infoBar" width="400" height="50">
+                    Your browser does not support the canvas element.
+                </canvas>
+                <br>
+                <br>
+                <br>
+                
+                <canvas id="viewport" width="400" height="600">
+                    Your browser does not support the canvas element.
+                </canvas>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            </body>
+</html>

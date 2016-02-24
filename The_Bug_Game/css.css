@@ -1,0 +1,156 @@
+p
+{
+    font-size: 2em;
+}
+
+#title {
+    position: relative;
+    text-align: center;
+    padding: 9px;
+    border: 2px solid purple;
+    color: #F9D956;
+    background-color: skyblue;
+    font-family: "Comic Sans MS";
+}
+
+#viewport
+{
+    padding: 0;
+    margin: 0;
+    border:2px solid purple;
+    border-radius: 1%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: skyblue;
+    float: left;
+}
+#infoBar
+{
+    padding: 0;
+    margin: 0;
+    border:2px solid purple;
+    border-radius: 10%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #63a0bd;
+    float: left;
+}
+img
+{
+    display: none;
+}
+
+#startMenu {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+
+#game
+{
+margin: 0 auto;
+width: 400px;
+height: 650px;
+pointer-events: visible;
+}
+
+.row {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+#spacer {
+    opacity: 0;
+    height: 9%;
+}
+
+
+#startButton {
+    width: 70%;
+    background-color: purple;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    height: 50%;
+}
+
+
+
+
+.row p {
+    position: relative;
+    top: 10%;
+    color: yellow;
+    margin: 0;
+
+}
+
+#level{
+    position: relative;
+    top: 10%;
+    color: yellow;
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+
+}
+
+
+
+
+
+body {
+/*    font-family: sans-serif;*/
+    margin: 10px;
+    color: purple;
+    background-color: #eee;
+}
+
+
+
+label {
+    width: 40px;
+    border-radius: 3px;
+    border: 1px solid purple;
+}
+
+input.radio:empty {
+    display: none;
+}
+
+input.radio:empty ~ label {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+input.radio:checked ~ label {
+    text-indent: .1em;
+    color: yellow;
+    background-color: purple;
+}
+
+input.radio:checked ~ label {
+    color: yellow;
+}
+
+.radioButton {
+    display: inline-block;
+    position: relative;
+    margin-left: 3px;
+}
+
+
+
+
+
+
+
